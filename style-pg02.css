@@ -1,0 +1,123 @@
+:root {
+    --mine: #41e034;
+    --back: #f2f4f5;
+    --text: #191919;
+    --white: #ffffff;
+    --greyLight: #cdcdcd;
+    --mid-dark-back: #d5dadd;
+    --dark-back: #c7ced1;
+  }
+
+html, main {
+    color: var(--text);
+}
+
+.introduction > p{
+    font-size: 3.3rem;
+    font-weight: 400;
+    line-height: 3.8rem;
+    margin: 0;
+    padding-right: 3.5rem;
+}
+
+#abt_mn_p-01_italic{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.abt_mn_p-01_pt{
+    padding-top: 1.8rem;
+}
+
+.git_stc_01{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 6%;  
+    margin-left: 50%;
+}
+
+.git_stc_01 > p{
+    margin: 0; 
+}
+
+.git_stc_01_p2{
+    padding-top: 0.8rem;
+}
+
+.btt-abt-01 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.btt-abt-01a {
+    margin-top: 1rem;
+}
+
+.res_stc_01 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding-right: 4rem;  
+    margin-left: 6%;
+    max-width: 40%;
+}
+
+.res_stc_01 > p{
+    margin: 0; 
+}
+
+.box_xpfcs {
+    padding: 2.2rem 2.8rem;
+    border-radius: 4vh;
+    margin: 14% auto;
+    width: 80%;
+
+    background-color: rgba(242,244,245,.5);
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 18px var(--greyLight);
+    overflow: hidden;
+
+    display: flex;
+}
+
+.h4_intro {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.xpfcs_pre-ul{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.xpfcs_ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    padding-left: 1.5rem;
+    line-height: 1.6rem;
+    margin: 0;
+}
+
+.xpfcs_li:before {
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-right: 10px;
+    display: inline-block;
+    content: "—";
+}
+
+.xpfcs_tlt {
+    min-width: 40%;
+    padding-right: 4%;
+}
+
+.spc-btn-03{
+    margin-top: 5rem;
+}
+
+.spc-btm-04{
+    margin-bottom: 14%;
+}

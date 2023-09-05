@@ -1,0 +1,511 @@
+/*size 1400px*/
+@media all and (max-width: 1400px){
+
+    .box_contact_mail a {
+        font-size: 4.1rem;
+    }
+
+}
+
+/*size 1200px*/
+@media all and (max-width: 1200px){
+
+    .box_contact_mail a {
+        font-size: 3.8rem;
+    }
+
+    .about__what {
+        font-size: 4.6rem;
+    }
+
+    .header_text, .header_logo {
+        font-size: 0.9rem;
+    }
+
+    main div h3 {
+        font-size: 1.8rem;
+    }
+
+}
+
+/*size 1100px*/
+@media all and (max-width: 1100px){
+    .box_contact_mail a {
+        font-size: 3.4rem;
+    }
+
+    .res_stc_01 {
+    max-width: 42%;
+    }
+}
+
+
+/*size 1024px*/
+@media all and (max-width: 1024px){
+    h4{
+        font-size: 1rem;
+    }
+
+    .box_contact_mail a {
+        font-size: 3.2rem;
+        text-decoration-thickness: 0.2rem;
+    }
+
+   
+    .cnct-mail-01 a{
+        font-size: 3.6rem;
+    }
+
+
+    .introduction > p {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+}
+
+/*size 940px*/
+@media all and (max-width: 940px){
+    .box_contact_mail a {
+        font-size: 2.6rem;
+    }
+}
+
+
+
+/*size 768px*/
+@media all and (max-width: 768px){
+    .introduction {
+        padding: 25% 6% 5% 6%;;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font: 0.9rem;
+    }
+
+    .box_contact_mail a {
+        font-size: 2.3rem;
+        text-decoration-thickness: 0.2rem;
+    }
+
+    .about__what {
+        font-size: 4.0rem;
+    }
+
+    .header_text, .header_logo {
+        font-size: 0.8rem;
+    }
+
+    .header_text {
+        column-gap: 1.1rem;
+    }
+
+    .contact-bottom {
+        padding-bottom: 4rem;
+    }
+
+    .contact-top {
+        padding-top: 4rem;
+    }
+
+    
+    .wcst01{
+        font-size: 1.6rem;
+    }
+
+    
+    .cnct-mail-01 a{
+        font-size: 2.8rem;
+    }
+
+
+    .introduction > p {
+        font-size: 2.6rem;
+        line-height: 3.0rem;
+    }
+
+    .git_stc_01, .res_stc_01 {
+        font-size: 1.4rem;
+    }
+
+    .btt-abt-01 {
+        font-size: 1.1rem;
+    }
+
+    .res_stc_01 {
+        max-width: 42%;
+    }
+
+    .h4_intro, .xpfcs_pre-ul {
+        font-size: 1.1rem;
+    }
+}
+
+/*size 690px*/
+@media all and (max-width: 690px){
+    .introduction {
+        padding: 30% 6% 5% 6%;
+    }
+
+    .box_contact_mail a {
+        font-size: 2.0rem;
+    }
+
+    .nv-smlscrn-n {
+        display: none;
+
+    }
+
+    .nv-smlscrn-y {
+        display: block;
+    }
+
+    .hdr-txt-nv-123ltc {
+        font-size: 1.1rem;
+    }
+
+    .header_text_nv {
+        padding: 22px 24px;
+    }
+
+    .header_text_nv02 {
+        padding: 22px 32px;
+    }
+
+    .header_text-opn {
+        font-size: 2.6rem;
+    }
+
+    .lowest {
+        display: block;
+        text-align: center;
+    }
+
+    .lowest_time {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+
+    .res_stc_01 {
+        max-width: 48%;
+    }
+}
+
+/*size 480px*/
+@media all and (max-width: 480px){
+    .introduction {
+        padding: 38% 6% 5% 6%;
+    }
+    
+    main div h3 {
+        font-size: 1.2rem;
+    }
+
+    main div h6 {
+        font-size: 0.9rem;
+    }
+
+    .about__what {
+        font-size: 1.5rem;
+    }
+
+    .box_contact_mail a {
+        font-size: 1.4rem;
+        text-decoration-thickness: 0.1rem;
+    }
+
+    .box_contact_buttons {
+        font-size: 1.0rem;
+    }
+
+    .social-list {
+        font-size: 1.2rem;
+    }
+
+    .lowest {
+        font-size: 0.7rem;
+    }
+
+    .contact-bottom {
+        padding-bottom: 2rem;
+    }
+
+    .contact-top {
+        padding-top: 2rem;
+    }
+
+    .spc-btn-02 {
+        margin-top: 5rem;
+    }
+
+    .box_contact {
+        margin: 30% auto;
+    }
+
+    #nav_fixed{
+        margin: 8% 6%;
+    }
+
+    .header_text_nv{
+        right: 6%;
+    }
+
+    .header_text-opn {
+        font-size: 2.2rem;
+        line-height: 5.4rem;
+    }
+
+    
+    
+    .back_fullAlt_h1 {
+        font-size: 5rem;
+    }
+
+    .wcst01 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .wcst02 {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+
+
+    .cnct-mail-01 a{
+        font-size: 1.9rem;
+    }
+
+
+    .introduction > p {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .git_stc_01, .res_stc_01 {
+        font-size: 1.2rem;
+    }
+
+    .git_stc_01 {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0 10% 0 6%;
+    }
+
+    .btt-abt-01a{
+        float: right;
+        margin-top: 1.4rem;
+    }
+
+    .box_xpfcs {
+        margin: 28% auto 14% auto;
+        display: block;
+        padding: 2rem 1.4rem;
+    }
+
+    .xpfcs_tlt{
+        padding-bottom: 1.6rem;
+    }
+
+    .res_stc_01 {
+        max-width: 100%;
+        padding: 0 10% 0 6%;
+        margin-left: 0;
+    }
+
+    .ftr_abt_mt{
+        margin-top: 30%;
+    }
+}
+
+/*size 425px*/
+@media all and (max-width: 425px){
+    main div h3{
+        max-width: 65%;
+    }
+
+    .box_contact_buttons {
+        display: inline-grid;
+        font-size: 1rem;
+    }
+
+    .hello_container {
+        justify-content: center;
+    }
+
+    .button_arrow_npdd-425 {
+        padding: 0.1rem 0.6rem 0.1rem 1.2rem;
+        margin: 0 auto 25px auto;
+        width: max-content;
+    }
+
+    .box_contact {
+        margin: 35% auto;
+        padding: 2.2rem 2.2rem;
+    }
+
+    .header_text-opn {
+        font-size: 1.8rem;
+        line-height: 4.4rem;
+    }
+
+    
+    
+    .wcst01 {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+
+    .cnct-mail-01 a{
+        font-size: 1.7rem;
+    }
+
+    
+    .introduction > p {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+
+    .spc-btn-03 {
+        margin-top: 4rem;
+    }
+
+    .git_stc_01, .res_stc_01 {
+        font-size: 1.1rem;
+    }
+}
+
+/*size 375px*/
+@media all and (max-width: 375px){
+    main div h3 {
+    max-width: 70%;
+    }
+
+    .introduction{
+    padding: 45% 6% 5% 6%;
+    }
+
+    .box_contact_mail a {
+        font-size: 1.2rem;
+    }
+
+
+    .back_fullAlt_h1 {
+        font-size: 3rem;
+    }
+
+    .wcst01 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .header_text-opn {
+        font-size: 1.6rem;
+        line-height: 4.0rem;
+    }    
+
+
+    .cnct-mail-01 a{
+        font-size: 1.5rem;
+    }
+
+
+    .introduction > p {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .pill_button-i-opn-m{
+        display: none;
+    }
+
+}
+
+/*size 320px*/
+@media all and (max-width: 320px){
+    .header_logo{
+        display: none;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    .box_contact_mail a {
+        font-size: 1.0rem;
+        text-decoration-thickness: 0.1rem;
+    }
+
+    .box_contact {
+        margin: 35% auto;
+        padding: 2.2rem 1.6rem;
+    }
+
+    footer {
+        padding: 0rem 2.2rem 3rem 2.2rem;;
+    }
+
+    .social-list {
+        font-size: 1.0rem;
+    }
+
+    .lowest {
+        padding-top: 3.6rem;
+    }
+
+    
+    
+    .wcst01 {
+        font-size: 1.0rem;
+        line-height: 1.5rem;
+    }
+
+    .wcst02 {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        font-size: 0.9rem;
+    }
+
+
+    .cnct-mail-01 a{
+        font-size: 1.3rem;
+    }
+
+
+    .introduction > p {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+
+    .git_stc_01, .res_stc_01 {
+        font-size: 1.0rem;
+    }
+
+    .btt-abt-01 {
+        font-size: 0.9rem;
+    }
+
+    .box_xpfcs {
+        margin: 28% auto 14% auto;
+        display: block;
+        padding: 1.8rem 1.1rem;
+    }
+
+    .h4_intro, .xpfcs_pre-ul {
+        font-size: 1rem;
+    }
+
+    .xpfcs_li:before {
+        font-size: 1.0rem;
+    }
+
+    .ftr_abt_mt {
+        margin-top: 40%;
+    }
+
+}

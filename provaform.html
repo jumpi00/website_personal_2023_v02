@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js" rel="preload" as="script"></script>
+    
+
+    <!--Font Connection-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- primo div sarà lo sfondo blur -->
+    <div>
+        <!-- secondo div è la strututra del form lo sfondo -->
+        <div>
+        <div class="cntct-form">
+            <div class="cntct-form-x">x</div>
+            <div class="cntct-form-ctn">
+                <p class="cntct-form-title">
+                    Titolo del form
+                </p>
+                <form name="contact" method="POST" action="POST" data-netlify="true">
+                    <div class="cntct-form-spxdwn"><input class="ipt01-cntform" type="text" name="name" placeholder="Your name" autocomplete="off" value=""></div>
+                    <div class="cntct-form-spxdwn"> <input class="ipt01-cntform" type="text" name="role" placeholder="Your role" value=""></div>
+                    <div class="cntct-form-spxdwn"> <input class="ipt01-cntform" type="email" name="email" placeholder="Your email" autocomplete="off" value=""></div>
+                    <div class="cntct-form-spxdwn"> <textarea class="ipt02-cntform" name="message" placeholder="How may I help you?"></textarea></div>
+                    <button class="ipt03-cntform" type="submit">Submit</button>
+                </form>
+
+                <div class="_1rupnA gBomdw">
+                    <p class="hhA1O_ UWdLZg"><a target="_blank" href="/privacy">Privacy Policy <i class="mgW_hc"></a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+</body>
+<style>
+
+.cntct-form{
+    max-width: 70%;
+    height: 85%;
+    padding-top: 30px;
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--color-background);
+    box-shadow: 0 0 4px rgba(0,0,0,.06), 0 0 4px rgba(0,0,0,.06);
+    z-index: 11;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--back);
+}
+
+.cntct-form-ctn {
+    max-width: 80%;
+    margin: auto;
+    padding: 3rem;
+}
+
+.cntct-form-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cntct-form-spxdwn {
+    margin-bottom: 10px;
+}
+.cntct-form-x {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 15px;
+    border: 1px solid rgba(0,95,99,.6);
+    background: rgba(228,244,243,.6);
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.ipt01-cntform {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ebf4f3;
+    border-radius: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+.ipt02-cntform {
+    width: 100%;
+    min-height: 150px;
+    max-height: 60vh;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid #ebf4f3;
+    border-radius: 10px;
+    outline: none;
+    resize: vertical;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.ipt03-cntform {
+    width: 100%;
+    min-width: 50px;
+    height: 50px;
+    background: var(--dark02-back);
+    border: 0;
+    border-radius: 40px;
+    color: var(--white);
+    padding: 10px;
+
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+    
+    transition: opacity .32s cubic-bezier(.4,0,.2,1),box-shadow .32s cubic-bezier(.4,0,.2,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+</style>
+
+</html>

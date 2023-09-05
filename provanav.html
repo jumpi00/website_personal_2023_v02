@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div class="page">
+    <div class="nv-smlscrn-y">
+    <div id="nav_fixed">
+        <a class="header_logo" aria-label="Logo" href="/">LOGO Giampaolo Zirone</a>
+        <span class="header_text_nv hdr-txt-nv-123ltc  mn-opn">more</span>
+    </div>
+
+    <div class="i-opn" style="z-index: 12;">
+		<div id="nav_fixed">
+            <a class="header_logo" aria-label="Logo" href="/">LOGO Giampaolo Zirone</a>
+            <span class="header_text_nv02 hdr-txt-nv-123ltc  mn-opn  x">less</span>
+        </div>
+		<ul class="header_text-opn">
+            <li class="sopra_nav"><a href="/">Home</a></li>
+            <li class="sopra_nav"><a href="01works.html">Works</a></li>
+            <li class="sopra_nav"><a href="02about.html">About</a></li>
+            <li class="sopra_nav"><a href="03contact.html">Contact</a></li>
+        </ul>
+		<footer>
+            <section>
+                <div class=".pill_button">hello@giampaolozirone.com</div>
+                <div class="lowest">
+
+                    <div class="lowest_time">
+                        <div id="clock" onload="currentTime()">
+                        </div>
+                        &nbsp;CET - Italy
+                    </div>
+
+                    <span class="lowest_text">
+                        ©
+                        <!-- da controllare la classe in questa sezione -->
+                        <span>2023</span>
+                        — Giampaolo Zirone. All rights reserved. Do not use without permission. &nbsp;
+                        <!-- <a href="/privacy">Privacy Policy</a></span>-->
+                    </span>
+
+                    <!-- inserire l'orario che si aggiorna automaticamente -->
+
+                </div>
+
+            </section>
+        </footer>
+	</div>
+</div>
+    </div>
+
+<script type="text/javascript">
+	$(".mn-opn").click(function(){
+		$(".i-opn").show(200);
+	});
+
+	$(".x").click(function(){
+		$(".i-opn").hide(200);
+	});
+</script>
+
+
+
+</div>  
+</body>
+    <style>
+        .header_text_nv, .header_text_nv02 {
+        float: right;
+        position: fixed;
+        right: 2.4rem;
+
+        padding: 26px 24px;
+        border-radius: 40px;
+        background-color: rgba(242,244,245,.5);
+        border: 2px solid transparent;
+        box-shadow: 0px 0px 18px var(--greyLight);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        overflow: hidden;
+        }
+
+        .header_text_nv02 {
+            padding: 26px 28px;
+            background-color: var(--mid-dark-back);
+        }
+
+        .hdr-txt-nv-123ltc {
+        font-family: 'Lora', serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1.2rem;
+        }
+
+        .header_text-opn {
+        text-decoration: none;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 20px 20px;
+        text-align: center;
+        line-height: 6.6rem;
+
+        margin-top: 10rem;
+        }
+
+        .header_text-opn li a {
+        color: var(--text);
+        transition: 0.5s ease-in-out;
+        }
+
+        .i-opn {
+        background-color: var(--back);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        }
+
+    </style>
+</html>
