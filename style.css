@@ -418,6 +418,25 @@ footer{
     width: 100%;
 }
 
+input, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.mrg00{
+    margin: 0   ;
+}
+
+.mrg-btt-1 {
+    margin-bottom: 1rem;
+}
+
+.mrg-btt-08 {
+    margin-bottom: 0.8rem;
+}
+
 /*Hover elements*/
 
 .pill_hover:hover{
@@ -459,6 +478,18 @@ footer{
   border-radius: 4vh;
   box-shadow: inset 3px 3px 5px var(--greyLight), inset -3px -3px 5px var(--white);
   transition: all 0.4s ease;
+}
+
+.form-sbmt-bck a:hover {
+    font-size: 0.9rem;
+    transition: all 0.6s ease;  
+}
+
+.cntct-form-subtitle-spc:hover {
+    text-decoration-color: var(--mine);
+    font-size: 105%;
+    transition: all 0.6s ease;
+    
 }
 
 

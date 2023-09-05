@@ -1,0 +1,177 @@
+.cntct-form {
+    max-width: 70%;
+    height: 85%;
+    padding-top: 30px;
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--color-background);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .06), 0 0 4px rgba(0, 0, 0, .06);
+    z-index: 11;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--back);
+}
+
+.cntct-form-ctn {
+    max-width: 80%;
+    margin: auto;
+    padding: 3rem;
+    min-height: 65%;
+}
+
+.cntct-form-title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.cntct-form-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: left;
+}
+
+.cntct-form-subtitle-spc {
+    color: var(--text);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.cntct-form-spxdwn {
+    margin-bottom: 12px;
+}
+
+.cntct-form-x {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 15px;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 5px var(--greyLight), -3px -3px 5px var(--white);
+    border-radius: 40px;
+    display: inline-block;
+
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+}
+
+.cntct-form-x svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+    transform: scale(0.8);
+}
+
+.ipt01-cntform {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ebf4f3;
+    border-radius: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+.ipt02-cntform {
+    width: 100%;
+    min-height: 150px;
+    max-height: 60vh;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid #ebf4f3;
+    border-radius: 10px;
+    outline: none;
+    resize: vertical;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.ipt03-cntform {
+    width: 100%;
+    min-width: 50px;
+    height: 50px;
+    background: var(--dark02-back);
+    border: 0;
+    border-radius: 40px;
+    color: var(--white);
+    padding: 10px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+
+    transition: opacity .32s cubic-bezier(.4, 0, .2, 1), box-shadow .32s cubic-bezier(.4, 0, .2, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.cntct-form-prv {
+    text-align: center;
+    padding: 3rem;
+}
+
+.form-sbmt {
+    padding: 3rem;
+    border-radius: 3rem;
+    text-align: left;
+    background-color: var(--back);
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 5px var(--greyLight), -3px -3px 5px var(--white);
+}
+
+.wcst01_sbmt {
+    font-size: 1.4rem;
+}
+
+.form-sbmt-bck a{
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.form-sbmt-bck-a {
+    text-decoration: underline;
+    text-decoration: #41e034;
+}
+
+.cntct-form-cr-2 {
+    display: flex;
+}
+
+.ipt03-cntform-cr {
+    width: 30%;
+    margin-left: 12px;
+}
+
+.cntct-form-ipt02 {
+    width: 100%;
+}
+
+.ipt02cr-cntform {
+    border-radius: 40px;
+}
