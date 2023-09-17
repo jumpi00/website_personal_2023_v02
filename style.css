@@ -74,6 +74,8 @@ h5 {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     overflow: hidden;
+
+    transition: all 0.4s ease;
 }
 
 nav {
@@ -110,6 +112,7 @@ nav {
     color: var(--text);
     text-decoration: underline;
     /*text-decoration-thickness: 1rem;*/
+    transition: all 0.4s ease;
 }
 
 .lowest{
@@ -437,6 +440,11 @@ input, textarea{
     margin-bottom: 0.8rem;
 }
 
+
+.cnct-mail-01 a{
+    transition: all 0.4s ease;
+}
+
 /*Hover elements*/
 
 .pill_hover:hover{
@@ -477,19 +485,12 @@ input, textarea{
 {
   border-radius: 4vh;
   box-shadow: inset 3px 3px 5px var(--greyLight), inset -3px -3px 5px var(--white);
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 
-.form-sbmt-bck a:hover {
-    font-size: 0.9rem;
-    transition: all 0.6s ease;  
-}
-
-.cntct-form-subtitle-spc:hover {
+.cnct-mail-01 > a:hover{
     text-decoration-color: var(--mine);
-    font-size: 105%;
-    transition: all 0.6s ease;
-    
+    transition: all 0.4s ease;
 }
 
 

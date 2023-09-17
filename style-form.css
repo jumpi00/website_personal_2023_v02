@@ -40,6 +40,7 @@
     color: var(--text);
     text-decoration: underline;
     font-weight: 500;
+    transition: all 0.8s ease;
 }
 
 .cntct-form-spxdwn {
@@ -179,4 +180,45 @@
 
 .ipt02cr-cntform {
     border-radius: 40px;
+}
+
+
+/*Transition of the forms*/
+.mn-opnp{
+    background-color: red;
+    height: 50px;
+}
+
+.cntct-form-x {
+    transform-origin: 50% 50%;
+}
+
+.cntct-form-x:hover {
+    width: 30px;
+    height: 30px;
+    /* top: 28px;
+    right: 28px; */
+    transition: all 0.6s ease;
+
+}
+
+/* .cntct-form-x:hover .cntct-form-x-svg{
+    width: 80%;
+} */
+
+.ipt03-cntform:hover{
+    background-color: #73838C;
+    transition: all 0.6s ease;
+}
+
+.cntct-form-subtitle-spc:hover {
+    text-decoration-color: var(--mine);
+    text-decoration-thickness: 0.12rem;
+    transition: all 0.8s ease;
+}
+
+.form-sbmt-bck a:hover {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    transition: all 0.6s ease;  
 }

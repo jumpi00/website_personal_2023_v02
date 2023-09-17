@@ -68,7 +68,6 @@ html, body, main {
     font-family: 'Lora', serif;
     font-style: italic;
     font-weight: 400;
-    transition: all 0.4s ease;
 }
 
 .wcst02 {
@@ -81,6 +80,7 @@ html, body, main {
     font-style: italic;
     font-weight: 500;
     text-decoration: underline;
+    transition: all 0.4s ease;
 }
 
 .altro{
@@ -130,11 +130,6 @@ html, body, main {
 
 .wcst02 > a:hover, #wcst02_italic:hover {
     
-    text-decoration-color: var(--mine);
-    transition: all 0.4s ease;
-}
-
-.cnct-mail-01 > a:hover{
     text-decoration-color: var(--mine);
     transition: all 0.4s ease;
 }
