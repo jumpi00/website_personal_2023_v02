@@ -13,6 +13,7 @@
     <script src="script.js" rel="preload" as="script"></script>
     <link rel="stylesheet" href="style-pg01-03.css">
     <link rel="stylesheet" href="style-form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
     <!--Font Connection-->
@@ -28,9 +29,13 @@
     <div class="over_fullAlt">
         <!-- secondo div è la strututra del form lo sfondo -->
         <div>
+
+        <div class="mn-opnp">
+            <p>ciaone</p>
+        </div>
             <div class="cntct-form">
                 <div class="cntct-form-x">
-                    <svg viewBox="0 0 50 50">
+                    <svg class="cntct-form-x-svg" viewBox="0 0 50 50">
                         <polygon
                             points="28.5,25 50,3.5 50,0 46.5,0 25,21.5 3.5,0 0,0 0,3.5 21.5,25 0,46.5 0,50 3.5,50 25,28.5 46.5,50 50,50 50,46.5 ">
                         </polygon>
@@ -40,7 +45,7 @@
                     <p class="cntct-form-title">
                         Make an enquiry
                     </p>
-                    <form name="contact" method="POST" action="/form-submission/" data-netlify="true">
+                    <form name="contact" method="POST" action="/03form-submission/" data-netlify="true">
                         <div class="cntct-form-spxdwn"><input class="ipt01-cntform" type="text" name="name"
                                 placeholder="Your name" autocomplete="off" value=""></div>
                         <div class="cntct-form-spxdwn"> <input class="ipt01-cntform" type="text" name="role"
@@ -63,7 +68,55 @@
     </div>
 </body>
 <style>
-    
+    .mn-opnp{
+        background-color: red;
+        height: 50px;
+    }
+
+    .cntct-form-x {
+        transform-origin: 50% 50%;
+    }
+
+    .cntct-form-x:hover {
+        width: 30px;
+        height: 30px;
+        /* top: 28px;
+        right: 28px; */
+        transition: all 0.6s ease;
+
+    }
+
+    /* .cntct-form-x:hover .cntct-form-x-svg{
+        width: 80%;
+    } */
+
+    .ipt03-cntform:hover{
+        background-color: #73838C;
+        transition: all 0.6s ease;
+    }
 </style>
+
+            <!-- <script type="text/javascript">
+                $(".mn-opnp").click(function(){
+            $(".cntct-form").show(200);
+            });
+
+            $(".cntct-form-x").click(function(){
+            $(".cntct-form").hide(200);
+            });
+            </script> -->
+
+            <script>
+                $('.mn-opnp').click(function() {
+            $(".cntct-form").fadeIn();
+            $(".cntct-form").animate({marginTop:"-=100px"},300);
+            });
+
+                 $('.cntct-form-x').click(function() {
+            $(".cntct-form").fadeOut();
+            $(".cntct-form").fadeOut();
+            });
+
+            </script>
 
 </html>
