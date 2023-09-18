@@ -25,13 +25,13 @@
 </head>
 
 <body>
+    <p style="font-size: 4rem; font-weight: 800; margin-left: 30px;">APRIRE</p>
     <!-- primo div sarà lo sfondo blur -->
     <div class="over_fullAlt">
         <!-- secondo div è la strututra del form lo sfondo -->
         <div>
 
         <div class="mn-opnp">
-            <p>ciaone</p>
         </div>
             <div class="cntct-form">
                 <div class="cntct-form-x">
@@ -81,7 +81,7 @@
             });
             </script> -->
 
-            <script>
+<!--             <script>
                 $('.mn-opnp').click(function() {
             $(".cntct-form").fadeIn();
             $(".cntct-form").animate({marginTop:"-=100px"},300);
@@ -92,6 +92,16 @@
             $(".cntct-form").fadeOut();
             });
 
-            </script>
+            </script> -->
+
+            <script>
+                function openNav() {
+                  document.getElementById("mn-opnp").style.height = "100%";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mn-opnp").style.height = "0%";
+                }
+                </script>
 
 </html>
