@@ -10,6 +10,16 @@
     --dark02-back: #8f9ca3;
   }
 
+::selection {
+    background-color: var(--mine);
+    color: var(--back);
+}
+
+::-moz-selection {
+    background-color: var(--mine);
+    color: var(--back);
+}
+
 body {
     background-color: var(--mine);
     margin: 0;	
@@ -443,6 +453,12 @@ input, textarea{
 
 .cnct-mail-01 a{
     transition: all 0.4s ease;
+}
+
+.star0 {
+    position: absolute;
+    transform: rotate(35deg);
+    width: 55px;
 }
 
 /*Hover elements*/

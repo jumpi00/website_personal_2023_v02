@@ -8,6 +8,16 @@
     --dark-back: #c7ced1;
 }
 
+::selection {
+    background-color: var(--mine);
+    color: var(--back);
+}
+
+::-moz-selection {
+    background-color: var(--mine);
+    color: var(--back);
+}
+
 html, body, main {    
     height: 100%;
     margin: 0;

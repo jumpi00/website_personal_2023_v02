@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>prova testo e selezione</p>
+    <img src="https://www.sinonimi-contrari.it/includes/images/sharers/sinonimi-di-prova.png" alt="prova">
+    <div id="circularcursor"></div>
+</body>
+<style>
+    p {
+        font-size: 3rem;
+    }
+
+    ::selection  {
+        background-color: red;
+        color: wheat;
+    }
+
+ /*    html {
+  cursor: none;
+} */
+
+#circularcursor {
+  background-color: transparent;
+  border:1px solid grey;    
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
+}
+    
+</style>
+
+<script>
+    $(document).ready(function() {
+  $(document).on('mousemove', function(e) {
+    $('#circularcursor').css({
+      left: e.pageX,
+      top: e.pageY
+    });
+  })
+});
+</script>
+</html>
