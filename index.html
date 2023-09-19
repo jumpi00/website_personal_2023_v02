@@ -62,7 +62,7 @@
     
 
         <header id="nav_fixed" class="nv-smlscrn-n">
-            <a class="header_logo" aria-label="Logo" href="index.html">Giampaolo Zirone</a>
+            <a class="header_logo box-01" aria-label="Logo" href="index.html">Giampaolo Zirone</a>
             <nav>
                 <ul class="header_text">
                     <li class="sopra_nav"><a href="works.html" class="box-01">Works</a></li>
@@ -271,8 +271,10 @@
     });
     
     //I am coming for 'a'
-    let ahover = document.getElementsByTagName('a')[0];
+    let ahover = document.querySelectorAll('a');
     
+    console.log(ahover)
+
         ahover.addEventListener('mouseover', function(){
         circle.classList.add('hover');
         });
