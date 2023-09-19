@@ -20,6 +20,11 @@
     color: var(--back);
 }
 
+/*cursor removing for personalised cursor*/
+html, body, a {
+  cursor: none;
+}
+
 body {
     background-color: var(--mine);
     margin: 0;	
