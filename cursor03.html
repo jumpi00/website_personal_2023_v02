@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" rel="preload" as="script"></script>
+    
 </head>
 <body>
+    <a href="" class="ciao">LINK</a>
     <div id="cursor" class="cursor__home" style="left: 1304px; top: 510px;"></div>
 </body>
 
 <style>
+html {
+  cursor: none;
+}
+
+a {
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: auto auto;
+    color: black;
+    cursor: none;
+}
+
+
 .cursor__home {
     z-index: 7999;
     position: fixed;
@@ -28,6 +45,18 @@
     transition: transform .25s, filter .25s, -webkit-filter .25s;
     pointer-events: none;
 }
+
+.cursor__home.hover {
+    transform: scale(0.6);
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    
+}
+
+.hover{
+    color: red;
+}
+
 </style>
 
 <script>
@@ -39,6 +68,14 @@
     });
   })
 });
+
+$('a').hover(function(e) {
+  $('#cursor').addClass('hover');
+}, function(a) {
+  $('#cursor').removeClass('hover');
+});
+
+
 </script>
 
 </html>

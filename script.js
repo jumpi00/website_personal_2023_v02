@@ -30,3 +30,6 @@ $(".mn-opn").click(function(){
 $(".x").click(function(){
   $(".i-opn").hide(200);
 });
+
+
+
