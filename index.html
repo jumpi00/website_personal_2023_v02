@@ -59,6 +59,7 @@
 
 <body>
     <div class="page">
+    
 
         <header id="nav_fixed" class="nv-smlscrn-n">
             <a class="header_logo" aria-label="Logo" href="index.html">Giampaolo Zirone</a>
@@ -253,9 +254,25 @@
             </section>
         </footer>
     </div>
-
     <div id="fade_bottom"></div>
-
+    <div id="cursor" class="cursor__home"></div>
 </body>
+
+<script>
+$(document).ready(function() {
+  $(document).on('mousemove', function(e) {
+    $('#cursor').css({
+      left: e.pageX,
+      top: e.pageY
+    });
+  })
+});
+
+$('a').hover(function(e) {
+    $('#cursor').addClass('sopra-c');
+    }, function(a) {
+    $('#cursor').removeClass('sopra-c');
+});
+</script>
 
 </html>
