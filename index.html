@@ -65,7 +65,7 @@
             <a class="header_logo" aria-label="Logo" href="index.html">Giampaolo Zirone</a>
             <nav>
                 <ul class="header_text">
-                    <li class="sopra_nav"><a href="works.html">Works</a></li>
+                    <li class="sopra_nav"><a href="works.html" class="box-01">Works</a></li>
                     <li class="sopra_nav"><a href="about.html">About</a></li>
                     <li class="sopra_nav"><a href="contact.html">Contact</a></li>
                 </ul>
@@ -255,24 +255,31 @@
         </footer>
     </div>
     <div id="fade_bottom"></div>
-    <div id="cursor" class="cursor__home"></div>
+    <div id="cursor"></div>
 </body>
 
 <script>
-$(document).ready(function() {
-  $(document).on('mousemove', function(e) {
-    $('#cursor').css({
-      left: e.pageX,
-      top: e.pageY
+    //mouse cursor
+    const circle = document.getElementById('cursor');
+    const circleStyle = circle.style;
+    
+    document.addEventListener('mousemove', e => {
+      window.requestAnimationFrame(() => {
+        circleStyle.top = `${ e.clientY}px`;
+        circleStyle.left = `${ e.clientX}px`;
+      });
     });
-  })
-});
-
-$('a').hover(function(e) {
-    $('#cursor').addClass('sopra-c');
-    }, function(a) {
-    $('#cursor').removeClass('sopra-c');
-});
+    
+    //I am coming for 'a'
+    let ahover = document.getElementsByTagName('a')[0];
+    
+        ahover.addEventListener('mouseover', function(){
+        circle.classList.add('hover');
+        });
+    
+        ahover.addEventListener('mouseleave', function(){
+        circle.classList.remove('hover');
+        });
+    
 </script>
-
 </html>

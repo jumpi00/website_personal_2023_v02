@@ -194,26 +194,7 @@
 
         </section>
     </footer>
-
-<div id="cursor" class="cursor__home"></div>
     
 </body>
-
-<script>
-    $(document).ready(function() {
-      $(document).on('mousemove', function(e) {
-        $('#cursor').css({
-          left: e.pageX,
-          top: e.pageY
-        });
-      })
-    });
-    
-    $('a').hover(function(e) {
-        $('#cursor').addClass('sopra-c');
-        }, function(a) {
-        $('#cursor').removeClass('sopra-c');
-    });
-</script>
 
 </html>

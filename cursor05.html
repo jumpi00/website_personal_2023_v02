@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- https://stackoverflow.com/questions/50538768/css-custom-cursor-that-changes-depending-on-hovered-element-flickers-when-movi -->
+<div id="wrapper">
+    <div id="box-1" class="box">sphere</div>
+    <div id="box-2" class="box">circle outline</div>
+    <div id="box-3" class="box box-3">circle pin</div>
+    <div id="box-4" class="box">circle color gradient</div>
+    <div id="circle"></div>
+  </div>
+  
+  <div class="citation">
+    <p>Recreation of the solution <a class="cite-link" href="https://stackoverflow.com/questions/50538768/css-custom-cursor-that-changes-depending-on-hovered-element-flickers-when-movi" target="_blank">here</a> for my own edification.</p>
+  </div>
+</body>
+
+<style>
+    html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  &:focus {
+    outline: none;
+  }
+}
+
+* {
+  font-family: monaco, courier;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  background-color: #acd1d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  cursor: none;
+}
+
+#wrapper {
+  position: relative;
+  width: 70%;
+  height: 80%;
+}
+
+#circle {
+  position: fixed;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transition:
+    background-color ease-in 10ms,
+    box-shadow ease-in 150ms,
+    transform ease-in 150ms;
+  /* promote it to its own layer to enable  hardware accelerated rendering: */
+  transform: translate3d(0, 0, 0);
+}
+
+.box {
+  height: 25%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+#box-1 {
+  background-color: #e8edf3;
+}
+  
+#box-1:hover ~ #circle {
+  background-color: #e6cf8b;
+  box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #ca9e03a6;
+}
+
+#box-2 {
+  background-color: #e6cf8b;
+}
+  
+#box-2:hover ~ #circle {
+  background-color: transparent;
+  /* use box-shadow instead of border to avoid changing the dimensions of the cursor, which would force it off-center until the mouse moves again: */
+  box-shadow: 0 0 0 3px #E91E63;
+}
+
+.box-3 {
+  background-color: #b56969; 
+}
+  
+.box-3:hover ~ #circle {
+  /* change size with scale() instead of width and height for better performance: */
+  transform: scale(0.5) translate3d(0, 0, 0);
+  background-color: #e6cf8b;
+} 
+
+#box-4 {
+  color: white;
+  background-color: #22264b;
+}
+
+#box-4:hover ~ #circle {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+a:hover ~ #circle{
+    background: red;
+}
+</style>
+
+<script>
+const circle = document.getElementById('circle');
+const circleStyle = circle.style;
+
+document.addEventListener('mousemove', e => {
+  window.requestAnimationFrame(() => {
+    circleStyle.top = `${ e.clientY - circle.offsetHeight/2 }px`;
+    circleStyle.left = `${ e.clientX - circle.offsetWidth/2 }px`;
+  });
+});
+
+</script>
+
+
+</html>

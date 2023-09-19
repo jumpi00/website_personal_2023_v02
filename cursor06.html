@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="cursor"></div>
+    
+    <h1 class="title">
+      Custom cursor<br> following
+      the <a href="">mouse</a>
+    </h1>
+</body>
+
+<style>
+    html {
+      font-size: 3rem;
+    }
+
+    a{
+    text-align: center;
+    align-items: center;
+    margin: auto auto;
+    color: black;
+    }
+
+    #cursor {
+        z-index: 50;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background: #41E034;
+        border-radius: 60px;
+        margin-left: -30px;
+        margin-top: -30px;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        transition: transform .25s, -webkit-filter .25s;
+        transition: transform .25s, filter .25s;
+        transition: transform .25s, filter .25s, -webkit-filter .25s;
+        pointer-events: none;
+        /* transform: translate(50%, 50%); */
+      }
+
+  #cursor.hover{
+    transform: scale(0.6);
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+</style>
+
+<script>
+//mouse cursor
+const circle = document.getElementById('cursor');
+const circleStyle = circle.style;
+
+document.addEventListener('mousemove', e => {
+  window.requestAnimationFrame(() => {
+    circleStyle.top = `${ e.clientY}px`;
+    circleStyle.left = `${ e.clientX}px`;
+  });
+});
+
+//I am coming for 'a'
+let ahover = document.getElementsByTagName('a')[0];
+
+    ahover.addEventListener('mouseover', function(){
+    circle.classList.add('hover');
+    });
+
+    ahover.addEventListener('mouseleave', function(){
+    circle.classList.remove('hover');
+    });
+
+</script>
+</html>
