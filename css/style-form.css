@@ -160,11 +160,6 @@
     transition: all 0.6s ease;  
 }
 
-.form-sbmt-bck-a {
-    text-decoration: underline;
-    text-decoration: #41e034;
-}
-
 .cntct-form-cr-2 {
     display: flex;
 }
@@ -219,6 +214,5 @@
 
 .form-sbmt-bck a:hover {
     font-size: 0.9rem;
-    text-decoration: underline;
     transition: all 0.6s ease;  
 }

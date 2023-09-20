@@ -21,9 +21,9 @@
 }
 
 /*cursor removing for personalised cursor*/
-html, body, a {
+/* html, body, a {
     cursor: none;
-}
+} */
 
 #cursor {
     z-index: 50;

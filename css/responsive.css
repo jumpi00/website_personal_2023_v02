@@ -116,10 +116,6 @@
         font-size: 1.6rem;
     }
 
-    
-    .cnct-mail-01 a{
-        font-size: 2.8rem;
-    }
 
 
     .introduction > p {
@@ -199,6 +195,7 @@
 @media all and (max-width: 590px) {
     .box_contact_mail a {
         font-size: 1.6rem;
+        text-decoration-thickness: 0.14rem;
     }
 }
 
@@ -282,12 +279,6 @@
         padding-right: 4rem;
         padding-left: 4rem;
     }
-
-
-    .cnct-mail-01 a{
-        font-size: 1.9rem;
-    }
-
 
     .introduction > p {
         font-size: 1.8rem;
@@ -373,11 +364,6 @@
         line-height: 1.6rem;
     }
 
-
-    .cnct-mail-01 a{
-        font-size: 1.7rem;
-    }
-
     
     .introduction > p {
         font-size: 1.5rem;
@@ -421,12 +407,6 @@
         font-size: 1.6rem;
         line-height: 4.0rem;
     }    
-
-
-    .cnct-mail-01 a{
-        font-size: 1.5rem;
-    }
-
 
     .introduction > p {
         font-size: 1.3rem;
@@ -483,12 +463,6 @@
         padding-left: 3rem;
         font-size: 0.9rem;
     }
-
-
-    .cnct-mail-01 a{
-        font-size: 1.3rem;
-    }
-
 
     .introduction > p {
         font-size: 1.1rem;
