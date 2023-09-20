@@ -195,6 +195,36 @@
         </section>
     </footer>
     
+    <div id="cursor"></div>
 </body>
+
+<script>
+    //mouse cursor
+    const circle = document.getElementById('cursor');
+    const circleStyle = circle.style;
+    
+    document.addEventListener('mousemove', e => {
+      window.requestAnimationFrame(() => {
+        circleStyle.top = `${ e.clientY}px`;
+        circleStyle.left = `${ e.clientX}px`;
+      });
+    });
+    
+
+    //mouse cursor over 
+    let ashover = document.querySelectorAll('a')
+
+    //console.log(ashover)
+
+    ashover.forEach(link => {
+        link.addEventListener('mouseover', () => {
+        circle.classList.add('hover');
+    });
+        link.addEventListener('mouseleave', () => {
+        circle.classList.remove('hover');
+    });
+    })
+    
+</script>
 
 </html>
