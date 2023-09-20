@@ -353,6 +353,11 @@
         line-height: 4.4rem;
     }
 
+    .box_contact_mail a {
+        font-size: 1.3rem;
+        text-decoration-thickness: 0.1rem;
+    }
+
     
     
     .wcst01 {
@@ -391,7 +396,7 @@
     }
 
     .box_contact_mail a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
 
