@@ -535,7 +535,7 @@ input, textarea{
   transition: all 0.6s ease;
 }
 
-.cnct-mail-01 > a:hover{
+.cnct-mail-01 > a:hover, .box_contact_mail > a:hover {
     text-decoration-color: var(--mine);
     transition: all 0.4s ease;
 }

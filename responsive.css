@@ -195,6 +195,14 @@
     }
 }
 
+/*size 590px*/
+@media all and (max-width: 590px) {
+    .box_contact_mail a {
+        font-size: 1.6rem;
+    }
+}
+
+
 /*size 480px*/
 @media all and (max-width: 480px){
     .introduction {
