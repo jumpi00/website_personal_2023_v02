@@ -273,7 +273,7 @@
     //I am coming for 'a'
     // let ahover = document.querySelectorAll('a');
     // questo per far vedere che dovrebbe fare in alto a sx sul mio nome
-    let ahover = document.getElementsByTagName('a') [0];
+    /* let ahover = document.getElementsByTagName('a') [0];
     
     console.log(ahover)
 
@@ -283,7 +283,20 @@
     
         ahover.addEventListener('mouseleave', function(){
         circle.classList.remove('hover');
-        });
+        }); */
+    
+    let ashover = document.querySelectorAll('a')
+
+    //console.log(ashover)
+
+    ashover.forEach(link => {
+        link.addEventListener('mouseover', () => {
+        circle.classList.add('hover');
+    });
+        link.addEventListener('mouseleave', () => {
+        circle.classList.remove('hover');
+    });
+    })
     
 </script>
 
