@@ -75,4 +75,69 @@ let ahover = document.getElementsByTagName('a')[0];
     });
 
 </script>
+
+<!-- Togliere il commento all'inizio dello script e ci sono degli elementi vecchi e quello che fuziona -->
+<!-- <script>
+  //mouse cursor
+  const circle = document.getElementById('cursor');
+  const circleStyle = circle.style;
+  
+  document.addEventListener('mousemove', e => {
+    window.requestAnimationFrame(() => {
+      circleStyle.top = `${ e.clientY}px`;
+      circleStyle.left = `${ e.clientX}px`;
+    });
+  });
+  
+  //I am coming for 'a'
+  // let ahover = document.querySelectorAll('a');
+  // questo per far vedere che dovrebbe fare in alto a sx sul mio nome
+  /* let ahover = document.getElementsByTagName('a') [0];
+  
+  console.log(ahover)
+
+      ahover.addEventListener('mouseover', function(){
+      circle.classList.add('hover');
+      });
+  
+      ahover.addEventListener('mouseleave', function(){
+      circle.classList.remove('hover');
+      }); */
+  
+  let ashover = document.querySelectorAll('a')
+
+  //console.log(ashover)
+
+  ashover.forEach(link => {
+      link.addEventListener('mouseover', () => {
+      circle.classList.add('hover');
+  });
+      link.addEventListener('mouseleave', () => {
+      circle.classList.remove('hover');
+  });
+  })
+  
+</script>
+
+<!-- jquery che non funziona quando si scrolla -->
+<!-- <script>
+  $(document).ready(function() {
+$(document).on('mousemove', function(e) {
+  $('#cursor').css({
+    left: e.pageX,
+    top: e.pageY
+  });
+})
+});
+
+$('a').hover(function(e) {
+$('#cursor').addClass('hover');
+}, function(a) {
+$('#cursor').removeClass('hover');
+});
+
+
+</script> -->
+
+
 </html>

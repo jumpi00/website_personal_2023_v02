@@ -21,9 +21,9 @@
 }
 
 /*cursor removing for personalised cursor*/
-/*     html, body, a {
+html, body, a {
     cursor: none;
-    } */
+}
 
 #cursor {
     z-index: 50;
@@ -36,9 +36,9 @@
     margin-top: -30px;
     -webkit-filter: blur(15px);
     filter: blur(15px);
-    transition: transform .25s, -webkit-filter .25s;
-    transition: transform .25s, filter .25s;
-    transition: transform .25s, filter .25s, -webkit-filter .25s;
+    transition: transform .20s, -webkit-filter .20s;
+    transition: transform .20s, filter .20s;
+    transition: transform .20s, filter .20s, -webkit-filter .20s;
     pointer-events: none;
 }
 
