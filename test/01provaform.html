@@ -25,17 +25,17 @@
 </head>
 
 <body>
-    <p id="try" style="font-size: 4rem; font-weight: 800; margin-left: 30px; cursor: pointer;">APRIRE</p>
+    <p id="aprnd" style="font-size: 4rem; font-weight: 800; margin-left: 30px; cursor: pointer;">APRIRE</p>
     <!-- primo div sarà lo sfondo blur -->
-    <div id="text4" class="over_fullAlt"> </div>
+    <div id="blr-frm-01" class="over_fullAlt"> </div>
         
         <!-- secondo div è la strututra del form lo sfondo -->
         <div>
 
         <div class="mn-opnp">
         </div>
-            <div id="text" class="cntct-form">
-                <div id="undo" class="cntct-form-x">
+            <div id="frm01" class="cntct-form">
+                <div id="chdndo" class="cntct-form-x">
                     <svg class="cntct-form-x-svg" viewBox="0 0 50 50">
                         <polygon
                             points="28.5,25 50,3.5 50,0 46.5,0 25,21.5 3.5,0 0,0 0,3.5 21.5,25 0,46.5 0,50 3.5,50 25,28.5 46.5,50 50,50 50,46.5 ">
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="cntct-form-prv">
-                    <p class="hhA1O_ UWdLZg"><a target="_blank" href="/privacy">Privacy Policy <i
+                    <p class="prv-plc"><a target="_blank" href="https://www.netlify.com/privacy/">Privacy Policy <i
                                 class="mgW_hc"></a></p>
                 </div>
             </div>
@@ -69,13 +69,19 @@
     </div>
 </body>
 <style>
+    .prv-plc a{
+        color: var(--dark02-back);
+        text-decoration: underline;
+        opacity: 0.5;
+    }
+
    .over_fullAlt{
     opacity: 0;
     transition: opacity 1s;
     z-index: -9;
    }
 
-   .text3{
+   .over_fullAlt-frm{
     opacity: 1;
     transition: opacity 1s;
     z-index: 1;
@@ -87,7 +93,7 @@
         transition: bottom 1s ease;
     }
 
-    .text2{
+    .cntct-form-prt{
         bottom: 0;
     }
 
@@ -131,14 +137,14 @@
 
 
     <script type="text/javascript">
-        document.getElementById("try").addEventListener("click", function () {
-            document.getElementById("text").classList.add("text2");
-            document.getElementById("text4").classList.add("text3");
+        document.getElementById("aprnd").addEventListener("click", function () {
+            document.getElementById("frm01").classList.add("cntct-form-prt");
+            document.getElementById("blr-frm-01").classList.add("over_fullAlt-frm");
         });
 
-        document.getElementById("undo").addEventListener("click", function () {
-            document.getElementById("text").classList.remove("text2");
-            document.getElementById("text4").classList.remove("text3");
+        document.getElementById("chdndo").addEventListener("click", function () {
+            document.getElementById("frm01").classList.remove("cntct-form-prt");
+            document.getElementById("blr-frm-01").classList.remove("over_fullAlt-frm");
         });
     </script>
 
