@@ -24,12 +24,13 @@
 </head>
 
 <body>
+    <p id="aprnd" style="font-size: 4rem; font-weight: 800; margin-left: 30px; cursor: pointer;">APRIRE</p>
     <!-- primo div sarà lo sfondo blur -->
-    <div class="over_fullAlt">
+    <div id="blr-frm-01" class="over_fullAlt"> </div>
         <!-- secondo div è la strututra del form lo sfondo -->
         <div>
-            <div class="cntct-form">
-                <div class="cntct-form-x">
+            <div id="frm02" class="cntct-form">
+                <div id="chdndo" class="cntct-form-x">
                     <svg viewBox="0 0 50 50">
                         <polygon
                             points="28.5,25 50,3.5 50,0 46.5,0 25,21.5 3.5,0 0,0 0,3.5 21.5,25 0,46.5 0,50 3.5,50 25,28.5 46.5,50 50,50 50,46.5 ">
@@ -62,5 +63,17 @@
 <style>
 
 </style>
+        <!--ECCOMI-->            
+        <script type="text/javascript">
+            document.getElementById("aprnd").addEventListener("click", function () {
+                document.getElementById("frm02").classList.add("cntct-form-prt");
+                document.getElementById("blr-frm-01").classList.add("over_fullAlt-frm");
+            });
+
+            document.getElementById("chdndo").addEventListener("click", function () {
+                document.getElementById("frm02").classList.remove("cntct-form-prt");
+                document.getElementById("blr-frm-01").classList.remove("over_fullAlt-frm");
+            });
+        </script>
 
 </html>
