@@ -249,3 +249,22 @@ z-index: 1;
 #schiacciami {
     background-color: red;
 }
+
+/*for the submission*/
+.over_fullAlt02 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    background-color: rgba(242,244,245,.5);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
