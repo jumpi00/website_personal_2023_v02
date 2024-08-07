@@ -224,10 +224,26 @@
     opacity: 0.5;
 }
 
-.over_fullAlt{
-opacity: 0;
-transition: opacity 0.5s ease;
-z-index: -9;
+.over_fullAlt {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    background-color: rgba(242,244,245,.5);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -9;
 }
 
 .over_fullAlt-frm{
@@ -273,4 +289,28 @@ z-index: 1;
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: -1;
+}
+
+/*form with selection*/
+.frmnia{
+    /*width: 10px;*/
+    height: 10px;
+    border-top: 5px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 20px;
+    transform: translateY(40%);
+}
+
+.sbj-slc{
+    position: relative;
+}
+
+.slc01-cntform{
+    font-size: 100%;
+    font-family: inherit;
 }
