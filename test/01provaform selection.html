@@ -48,12 +48,12 @@
                 </p>
                 <form name="contact" method="POST" action="/03form-submission/" data-netlify="true">
                     
-                    <div class="cntct-form-spxdwn ipt01-cntform" ><span class=""></span><select class="_0aTilh" name="service">
+                    <div class="cntct-form-spxdwn sbj-slc" ><span class="frmnia"></span><select class="ipt01-cntform slc01-cntform" name="service">
                             <option value="">Subject...</option>
-                            <option value="feasibility">Feasibility Assessment</option>
-                            <option value="concept">Creative Concept &amp; Prototyping</option>
-                            <option value="frontend">Front-end Development</option>
-                            <option value="fullstack">Full-stack Development</option>
+                            <option value="feasibility">Graphic Design</option>
+                            <option value="concept">Creative Concept</option>
+                            <option value="frontend">Information &amp; Data Vis</option>
+                            <option value="fullstack">Collaboration</option>
                             <option value="general">General Enquiry</option>
                         </select>
                     </div>
@@ -110,6 +110,29 @@
         background-color: red;
     }
         */
+
+    .frmnia{
+        /*width: 10px;*/
+        height: 10px;
+        border-top: 5px solid #333;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 20px;
+        transform: translateY(40%);
+    }
+
+    .sbj-slc{
+        position: relative;
+    }
+
+    .slc01-cntform{
+        font-size: 100%;
+        font-family: inherit;
+    }
 </style>
 <!-- <script type="text/javascript">
                 $(".mn-opnp").click(function(){
