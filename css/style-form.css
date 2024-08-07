@@ -295,7 +295,7 @@ z-index: 1;
 .frmnia{
     /*width: 10px;*/
     height: 10px;
-    border-top: 5px solid #333;
+    border-top: 5px solid var(--text);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     position: absolute;
