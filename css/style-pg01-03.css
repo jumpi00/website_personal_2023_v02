@@ -41,7 +41,7 @@ html, body, main {
 }
 
 .over_fullAlt {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     left: 0;

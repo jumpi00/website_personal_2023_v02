@@ -268,3 +268,9 @@ z-index: 1;
     backdrop-filter: blur(15px);
     overflow: hidden;
 }
+
+.z-meno{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
